@@ -12,9 +12,13 @@
 		B86000191F1E3CE600DEE9F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86000171F1E3CE600DEE9F5 /* Main.storyboard */; };
 		B860001B1F1E3CE600DEE9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B860001A1F1E3CE600DEE9F5 /* Assets.xcassets */; };
 		B860001E1F1E3CE600DEE9F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B860001C1F1E3CE600DEE9F5 /* LaunchScreen.storyboard */; };
+		B86000261F1E3EEB00DEE9F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B86000251F1E3EEB00DEE9F5 /* GoogleService-Info.plist */; };
+		E0C584456331D3682F31B36D /* Pods_ixCommunication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C7909B819316286350D4BD /* Pods_ixCommunication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B0AB2603127DF3002B09098 /* Pods-ixCommunication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ixCommunication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ixCommunication/Pods-ixCommunication.debug.xcconfig"; sourceTree = "<group>"; };
+		97C7909B819316286350D4BD /* Pods_ixCommunication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ixCommunication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86000101F1E3CE600DEE9F5 /* ixCommunication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ixCommunication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86000131F1E3CE600DEE9F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86000151F1E3CE600DEE9F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		B860001A1F1E3CE600DEE9F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B860001D1F1E3CE600DEE9F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B860001F1F1E3CE600DEE9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B86000251F1E3EEB00DEE9F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8D913856EBD18586DE2EE41 /* Pods-ixCommunication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ixCommunication.release.xcconfig"; path = "Pods/Target Support Files/Pods-ixCommunication/Pods-ixCommunication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C584456331D3682F31B36D /* Pods_ixCommunication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E5FD34BA8008EA8B32E50BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97C7909B819316286350D4BD /* Pods_ixCommunication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B86000071F1E3CE600DEE9F5 = {
 			isa = PBXGroup;
 			children = (
 				B86000121F1E3CE600DEE9F5 /* ixCommunication */,
 				B86000111F1E3CE600DEE9F5 /* Products */,
+				C9E35CCC2E7D7908B527C4BC /* Pods */,
+				9E5FD34BA8008EA8B32E50BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				B860001A1F1E3CE600DEE9F5 /* Assets.xcassets */,
 				B860001C1F1E3CE600DEE9F5 /* LaunchScreen.storyboard */,
 				B860001F1F1E3CE600DEE9F5 /* Info.plist */,
+				B86000251F1E3EEB00DEE9F5 /* GoogleService-Info.plist */,
 			);
 			path = ixCommunication;
+			sourceTree = "<group>";
+		};
+		C9E35CCC2E7D7908B527C4BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B0AB2603127DF3002B09098 /* Pods-ixCommunication.debug.xcconfig */,
+				C8D913856EBD18586DE2EE41 /* Pods-ixCommunication.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B86000221F1E3CE600DEE9F5 /* Build configuration list for PBXNativeTarget "ixCommunication" */;
 			buildPhases = (
+				B794036F61E15A0009DF90BE /* [CP] Check Pods Manifest.lock */,
 				B860000C1F1E3CE600DEE9F5 /* Sources */,
 				B860000D1F1E3CE600DEE9F5 /* Frameworks */,
 				B860000E1F1E3CE600DEE9F5 /* Resources */,
+				8EDDD04CF3DF3F0E763371C7 /* [CP] Embed Pods Frameworks */,
+				DFD97D0F953AF9749CE039A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				B860001E1F1E3CE600DEE9F5 /* LaunchScreen.storyboard in Resources */,
+				B86000261F1E3EEB00DEE9F5 /* GoogleService-Info.plist in Resources */,
 				B860001B1F1E3CE600DEE9F5 /* Assets.xcassets in Resources */,
 				B86000191F1E3CE600DEE9F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8EDDD04CF3DF3F0E763371C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ixCommunication/Pods-ixCommunication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B794036F61E15A0009DF90BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD97D0F953AF9749CE039A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ixCommunication/Pods-ixCommunication-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B860000C1F1E3CE600DEE9F5 /* Sources */ = {
@@ -261,6 +340,7 @@
 		};
 		B86000231F1E3CE600DEE9F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B0AB2603127DF3002B09098 /* Pods-ixCommunication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7JW7LM2822;
@@ -274,6 +354,7 @@
 		};
 		B86000241F1E3CE600DEE9F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8D913856EBD18586DE2EE41 /* Pods-ixCommunication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7JW7LM2822;
@@ -304,6 +385,7 @@
 				B86000241F1E3CE600DEE9F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
