@@ -10,5 +10,6 @@ target 'ixCommunication' do
 
   pod 'Firebase'
   pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 
 end
