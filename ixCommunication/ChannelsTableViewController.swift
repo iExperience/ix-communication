@@ -33,6 +33,18 @@ class ChannelsTableViewController: UITableViewController {
         observeChannels()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)
+        
+        let chatVc = segue.destination as! MessagesViewController
+        
+        chatVc.channel = channels[(indexPath?.row)!]
+        chatVc.channelRef = channelRef?.child(channels[(indexPath?.row)!].id)
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
